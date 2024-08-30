@@ -1,5 +1,10 @@
 .center {
-    margin: auto;
+    text-align:center;
     font-size: 18px;
     font-weight: bold;
+}
+
+body{
+    padding-left: 50px;
+    padding-right: 50px;
 }
