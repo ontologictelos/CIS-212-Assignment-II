@@ -28,23 +28,16 @@
         <li> Coffee </li>
     </ul>
     <script> 
+    $(document).ready(function(){
     window.onload = function(){
         alert("Hello World!");
      }
 
-    //click event
-    //change color
-    // challenge: loop random color for every click
-
-    (document).ready(function(){
-    ("span").click(function(){
-    ("span").addClass("newColor");
-        
-    });
-    });
-    
-
-    
+     $("span").click(function(){
+        $("span").addClass("newColor");
+        console.log("click");
+     })
+    })
     </script>
 </body>
 </html>
