@@ -31,10 +31,10 @@
     $(document).ready(function(){
         alert("Hello World!");
        
-
         $("span").click(function(){
-            $("span").addClass("newColor");
-            console.log("click");
+            const randomColor = getRandom();
+            $("span").css("color", randomColor);
+            console.log("color in hexadecimal:", randomColor);
         })
 
         function getRandom(){
