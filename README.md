@@ -21,4 +21,4 @@
 - Using JQuery when the user clicks on one of the SWIC span elements I want you to change the text color of the word SWIC. Hint - Think of the HTML element they are wrapped in the DOM.
   - ~~Create a CSS class that changes the color of a HTML element.~~
   - ~~Create a Function that goes through the HTML document and finds every `<span>` element and applies the CSS class upon clicking the word within the `<span>` element.~~
-    - Challenge: Create a random color function that changes the color every time the `<span>` element is clicked.
+    - ~~Challenge: Create a random color function that changes the color every time the `<span>` element is clicked.~~
