@@ -30,12 +30,12 @@
     <script> 
     $(document).ready(function(){
         alert("Hello World!");
-       
-        $("span").click(function(){
+
+            $("span").click(function(){
             const randomColor = getRandom();
             $("span").css("color", randomColor);
             console.log("color in hexadecimal:", randomColor);
-        })
+             })
 
         function getRandom(){
             var hex = '0123456789ABCDEF';
