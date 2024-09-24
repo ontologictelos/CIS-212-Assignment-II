@@ -22,3 +22,9 @@
   - ~~Create a CSS class that changes the color of a HTML element.~~
   - ~~Create a Function that goes through the HTML document and finds every `<span>` element and applies the CSS class upon clicking the word within the `<span>` element.~~
     - ~~Challenge: Create a random color function that changes the color every time the `<span>` element is clicked.~~
+
+## Week four homework
+
+- ~~Add two buttons to the HTML one named "Toggle name" & the second named "Get Hobbies"~~
+  - ~~The first button "Toggle name" will hide the name in the header.~~
+  - ~~The second button will retrieve a list from a json file and add it to the DOM~~
