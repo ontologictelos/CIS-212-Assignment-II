@@ -14,3 +14,16 @@ $(document).ready(function(){
             color += hex[Math.floor(Math.random()*16)];
         }
         return color;
+    }
+
+        $("button").hover(
+            function(){
+            $(this).addClass("grey");
+            console.log("hover in");
+        },
+            function(){
+            $("button").removeClass("grey");
+            console.log("hover out");
+        }
+            
+    )
