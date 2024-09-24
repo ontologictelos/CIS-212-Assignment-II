@@ -4,11 +4,24 @@
     font-weight: bold;
 }
 
-body{
+.center-body{
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.newColor {
-    color: green;
+.pill{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5em 1em;
+    margin:0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #dddddd;
+    
+}
+
+.grey{
+    background: #cccccc;
 }
