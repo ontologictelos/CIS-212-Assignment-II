@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width>=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <title>Mark P Richter Web Project</title>
 </head>
-<body>
+<body class="center-body">
     <h1 class="center"> Mark P Richter </h1>
     <p> Hello! My name is Mark. I am a student attending southern Illinois community college (<span>SWIC</span>) studying computer science (CS). Previously, I was a HH-60 mechanic for the Air Force.
         Before joining the Air Force I attended Evangel University in Springfield MO studying studio art, theology and philosophy. While I love those areas of study the job market for those skills are not really in demand.
@@ -22,32 +23,8 @@
         At both of these place (Scooters and Church) I have been dubbed the "coffee guy". If looking for "good coffee" (while this is a subjective matter) I highly recommend Sump Coffee or Blueprint Coffee in Saint Louis.
     </p>
     <h2> Hobbies </h2>
-    <ul>
-        <li> <a href="https://www.oca.org/orthodoxy"> Theology </a></li>
-        <li> <a href="https://plato.stanford.edu/entries/metaphysics/">Philosophy</a></li>
-        <li> Coffee </li>
-    </ul>
-    <script> 
-    $(document).ready(function(){
-        alert("Hello World!");
-
-            $("span").click(function(){
-            const randomColor = getRandom();
-            $("span").css("color", randomColor);
-            console.log("color in hexadecimal:", randomColor);
-             })
-
-        function getRandom(){
-            var hex = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i<6; i++){
-                color += hex[Math.floor(Math.random()*16)];
-            }
-            return color;
-        }
-        
-       
-    })
-    </script>
+    <ul id="Hobbies"></ul>
+    <button class="pill" type="button" id="nameToggle"> Toggle Name </button>
+    <button class="pill" type="button" id="getHobbies"> Get Hobbies </button>
 </body>
 </html>
