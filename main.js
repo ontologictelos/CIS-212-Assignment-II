@@ -27,3 +27,15 @@ $(document).ready(function(){
         }
             
     )
+
+    $("#nameToggle").click(
+        function(){
+            if ($('h1').is(":visible")){
+            $("h1").hide();
+            console.log("hidden")
+        }
+        else {
+            $("h1").show();
+            console.log("shown")
+        }
+    })
