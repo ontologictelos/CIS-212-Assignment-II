@@ -39,3 +39,21 @@ $(document).ready(function(){
             console.log("shown")
         }
     })
+
+    $("#getHobbies").click(function(){
+        $.getJSON("object.json", function(data) {
+            var hobbies = [];
+            $.each(data, function(key, val) {
+                hobbies.push("<li id='" + key + "'>" + val + "</li>");
+            });
+            $("<ul/>", {
+                "class": "hobbies-list",
+                html: hobbies.join("")
+            }).appendTo("ul");
+            
+            console.log(data);
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.error("Error:", textStatus, errorThrown);
+        });
+    });
+    });
