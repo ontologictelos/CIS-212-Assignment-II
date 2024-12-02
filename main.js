@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    alert("Hello World!");
+    // alert("Hello World!");
 
+    // Change color of SWIC within span tags
         $("span").click(function(){
         const randomColor = textChangeColor();
         $("span").css("color", randomColor);
@@ -16,6 +17,7 @@ $(document).ready(function(){
         return color;
     }
 
+    // Button hover event
         $("button").hover(
             function(){
             $(this).addClass("grey");
@@ -28,6 +30,7 @@ $(document).ready(function(){
             
     )
 
+    // Name toggle event
     $("#nameToggle").click(
         function(){
             if ($('h1').is(":visible")){
@@ -49,11 +52,21 @@ $(document).ready(function(){
             $("<ul/>", {
                 "class": "hobbies-list",
                 html: hobbies.join("")
-            }).appendTo("ul");
+            }).appendTo("body");
             
             console.log(data);
         }).fail(function(jqXHR, textStatus, errorThrown) {
             console.error("Error:", textStatus, errorThrown);
         });
     });
+
+    // Select all odd rows in the table
+    $('table tr:odd').css('background-color', '#a9a9a9');
+
+    // Select all even rows in the table
+    $('table tr:even').css('font-family', 'Apple Chancery, cursive');
+
+    // Style first and last span tag and style differently
+    $('span:first, span:last').css('font-family', 'Apple Chancery, cursive')
+
     });
