@@ -25,3 +25,10 @@
 .grey{
     background: #cccccc;
 }
+
+table,th,td{
+    padding: 15px;
+    border-spacing: 30px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
