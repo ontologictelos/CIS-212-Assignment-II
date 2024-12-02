@@ -28,3 +28,14 @@
 - ~~Add two buttons to the HTML one named "Toggle name" & the second named "Get Hobbies"~~
   - ~~The first button "Toggle name" will hide the name in the header.~~
   - ~~The second button will retrieve a list from a json file and add it to the DOM~~
+
+## Week Six homework
+
+- Add a four by four table
+  - style with spacing for read ability
+  - create css classes for odd rows (use jquery library to grab odd rows)
+    - font
+    - bg color
+  - style first and last span differently
+    - random font generator?
+    - can you keep random color generator and yet still apply a random font generator to the first and last span tags?
